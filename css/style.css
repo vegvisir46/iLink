@@ -1,0 +1,531 @@
+@font-face {
+    font-family: 'Factor A';
+    src: url('../fonts/FactorA-Regular.eot');
+    src: local('Factor A Regular'), local('FactorA-Regular'),
+    url('../fonts/FactorA-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/FactorA-Regular.woff2') format('woff2'),
+    url('../fonts/FactorA-Regular.woff') format('woff'),
+    url('../fonts/FactorA-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Factor A';
+    src: url('../fonts/FactorAMedium-Regular.eot');
+    src: local('Factor A Medium Regular'), local('FactorAMedium-Regular'),
+    url('../fonts/FactorAMedium-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/FactorAMedium-Regular.woff2') format('woff2'),
+    url('../fonts/FactorAMedium-Regular.woff') format('woff'),
+    url('../fonts/FactorAMedium-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Factor A';
+    src: url('../fonts/FactorA-Bold.eot');
+    src: local('Factor A Bold'), local('FactorA-Bold'),
+    url('../fonts/FactorA-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/FactorA-Bold.woff2') format('woff2'),
+    url('../fonts/FactorA-Bold.woff') format('woff'),
+    url('../fonts/FactorA-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Regular.eot');
+    src: local('Gilroy Regular'), local('Gilroy-Regular'),
+    url('../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+    url('../fonts/Gilroy-Regular.woff') format('woff'),
+    url('../fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Bold.eot');
+    src: local('Gilroy Bold'), local('Gilroy-Bold'),
+    url('../fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+    url('../fonts/Gilroy-Bold.woff') format('woff'),
+    url('../fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Semibold.eot');
+    src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+    url('../fonts/Gilroy-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy-Semibold.woff2') format('woff2'),
+    url('../fonts/Gilroy-Semibold.woff') format('woff'),
+    url('../fonts/Gilroy-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Medium.eot');
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+    url('../fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+    url('../fonts/Gilroy-Medium.woff') format('woff'),
+    url('../fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-MediumItalic.eot');
+    src: local('Gilroy Medium Italic'), local('Gilroy-MediumItalic'),
+    url('../fonts/Gilroy-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy-MediumItalic.woff2') format('woff2'),
+    url('../fonts/Gilroy-MediumItalic.woff') format('woff'),
+    url('../fonts/Gilroy-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Обнуление */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    font-family: 'Gilroy';
+    font-weight: normal;
+    font-style: normal;
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    color: #000;
+}
+
+.wrapper {
+    min-height: 100%; /* или max ? */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+[class*="__container"] {
+    padding: 0 16px;
+    max-width: 1280px;
+    margin: 0 auto;  /* центрирования элемента */
+}
+
+@media (max-width: ) {
+    /*[class*="__container"] {*/
+    /*    padding: 0 16px;*/
+    /*    max-width: 1280px;*/
+    /*    margin: 0 auto;  !* центрирования элемента *!*/
+    /*}*/
+}
+
+/* ============================================================================================ */
+/* ========___ HEADER ___========================================================= */
+/* ============================================================================================ */
+
+
+.header {
+    /*padding: 0 16px;*/
+}
+
+.header__container {
+    background-color: #FFFFFF;
+    height: 116px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__user-logo {
+    margin: 0 20px 0 0;
+}
+
+.header__user-name {
+    color: #333333;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.header__user-surname {
+    color: #333333;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.header__logo {
+}
+
+.button {
+    color: white;
+    padding: 17px 28px;
+    background-color: #585CC6;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+}
+
+.header__control-panel-mobile {
+    display: none;
+    background-color: #585CC6;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+@media (max-width: 979px) {
+    .header__container {
+        height: 77px;
+    }
+
+    .header__user-logo {
+        margin: 0 8px 0 0;
+    }
+
+    .header__user-logo img{
+        height: 36px;
+    }
+
+    .header__logo {
+        transform: scale(0.69);
+    }
+
+    .header__user-surname {
+        display: none;
+    }
+
+    .header__control-panel {
+        display: none;
+    }
+
+    .header__control-panel-mobile {
+        display: block;
+    }
+
+
+}
+
+
+/* ============================================================================================ */
+/* ========___ MAIN ___========================================================= */
+/* ============================================================================================ */
+
+.main {
+    flex: 1 1 auto;  /* прилипание footer к низу */
+    background-color: #585CC6;
+}
+
+.main__container {
+}
+
+.main__title {
+    max-width: 1157px;
+    font-family: "Factor A";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 124px;
+    line-height: 148px;
+    letter-spacing: -0.0124em;
+    color: #FFFFFF;
+    margin: 93px 0 88px 0;
+}
+
+.main__info {
+    display: flex;
+    height: 415px;
+    margin: 0 0 120px 0;
+}
+
+.main__info-photo {
+    display: flex;
+    align-items: flex-end;
+}
+
+.main__info-me {
+    padding: 40px;
+    max-width: 1280px;
+    margin: 0 auto;  /* центрирования элемента */
+    display: flex;
+    flex-direction: column;
+    max-height: 383px;
+    background-color: #FFFFFF;
+}
+
+.main__info-me-nameBirth {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+}
+
+.main__info-me-name {
+    font-family: 'Factor A';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #585CC6;
+}
+
+.main__info-me-birth {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #8A8A8A;
+}
+
+.main__info-CSA {
+    display: flex;
+    margin: 0 0 18px 0;
+}
+
+.main__info-CSA-item {
+    /*justify-content: center;*/
+}
+
+.main__info-CSA-item:not(:last-child) {
+    padding: 0 40px 0 0 ;
+}
+
+.main__info-me-city {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #333333;
+}
+
+.main__info-me-city span {
+    font-weight: 700;
+}
+
+.main__info-me-sex {
+    display: flex;
+}
+
+.main__info-me-sex-text {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #333333;
+    margin: 0 10px 0 0;
+}
+
+.main__info-me-sex-text span {
+    font-weight: 700;
+}
+
+.main__info-me-age {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #333333;
+}
+
+.main__info-me-age span {
+    font-weight: 700;
+}
+
+.main__info-me-about {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #333333;
+    margin: 0 0 32px 0;
+}
+
+.main__info-me-about span {
+    font-weight: 700;
+}
+
+.main__info-me-pet {
+    display: flex;
+}
+
+.main__info-me-pet-text {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #333333;
+    margin: 0 0 0 12px;
+}
+
+.main__info-me-pet span {
+    font-weight: 700;
+ }
+
+
+/* ============================================================================================ */
+/* ========___ REVIEWS ___========================================================= */
+/* ============================================================================================ */
+
+.main__reviews {
+    /*position: absolute;*/
+    left: 0;
+    display: flex;
+    margin: 0 0 106px 0;
+    align-items: flex-end;
+}
+
+.reviews {
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    /*max-height: 525px;*/
+    width: 1198px;
+    padding: 56px 56px 64px 80px;
+    margin: 0 34px 0 0;
+}
+
+.reviews__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 38px 0;
+}
+
+.reviews__title {
+    font-family: 'Factor A';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 68px;
+    line-height: 88px;
+    letter-spacing: -0.0124em;
+    color: #333333;
+}
+
+.reviews__add {
+}
+
+.reviews__items {
+    /*position: relative;*/
+    display: flex;
+    /*flex: 0 1 50%;*/
+}
+
+.reviews__item {
+    flex: 0 1 50%;
+    background: #F5F5F5;
+    border-radius: 2px;
+    padding: 24px;
+}
+
+.reviews__item:not(:last-child) {
+    margin: 0 24px 0 0;
+}
+
+.reviews__item-header {
+    display: flex;
+    justify-content: space-between;
+    /*align-items: center;*/
+    margin: 0 0 24px 0;
+}
+
+.reviews__item-photo {
+    margin: 0 20px 0 0;
+}
+
+.reviews__item-name {
+    padding: 12px 0;
+    flex: 1 1 auto;
+    font-family: 'Factor A';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.0124em;
+    color: #333333;
+}
+
+.reviews__item-date {
+    font-family: 'Factor A';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #8A8A8A;
+}
+
+.reviews__item-descr {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.review__arrow-left {
+    margin: 0 16px 0 0;
+    cursor: pointer;
+}
+
+.review__arrow-right {
+    cursor: pointer;
+    margin: 0 16px 0 0;
+}
+
+/* ============================================================================================ */
+/* ========___ FOOTER ___========================================================= */
+/* ============================================================================================ */
+
+
+.footer {
+    padding: 0 16px;
+}
+
+.footer__container {
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__rights {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #8A8A8A;
+}
+
+.footer__socials {
+}
+
+.footer__socials-item {
+}
